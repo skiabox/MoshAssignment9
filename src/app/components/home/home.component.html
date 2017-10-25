@@ -1,0 +1,10 @@
+<h1>Home Page</h1>
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let singleDay of arrayOfDates">
+    <a [routerLink]="['/archive', singleDay.year, singleDay.month]">{{ singleDay.year }}/{{ singleDay.month }}</a>
+  </li>
+</ul>
+
+
